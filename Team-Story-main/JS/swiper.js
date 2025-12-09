@@ -14,15 +14,21 @@ var swiperMain = new Swiper(".slide-swp", {
 var swiperProducts = new Swiper(".slide_product", {
   slidesPerView: 5,
   spaceBetween: 20,
-  pagination: {
-    el: ".swiper-pagination",
-    dynamicBullets: true,
-    clickable: true
-  },
+  // pagination: {
+  //   el: ".swiper-pagination",
+  //   dynamicBullets: true,
+  //   clickable: true
+  // },
   autoplay: {
     delay: 2500,
     disableOnInteraction: false
   },
+
+navigation:{
+nextEl:".swiper-button-next",
+prevEl:".swiper-button-prev",
+},
+
   loop: true,
   breakpoints: {
     320: { slidesPerView: 1 },
