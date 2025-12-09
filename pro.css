@@ -400,6 +400,21 @@ font-weight: bold;
     background: transparent;
 }
 
+/* start slide */
+
+.top_slide {
+    position: relative;
+    text-transform: uppercase;
+    background: var(--main_color);
+    color: var(--white_color);
+    font-size: 18px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+}
+
 
 
 /* Product card style */
