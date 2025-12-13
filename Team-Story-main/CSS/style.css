@@ -51,7 +51,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: 5px 8px 8px #d1d1d13b;
+    box-shadow: 5px 8px 8px #a174743b;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -141,8 +141,7 @@ header .top_header .header_icons {
 header .top_header .header_icons .icon {
 
     position: relative;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
 
 header .top_header .header_icons .icon i {
@@ -404,7 +403,7 @@ swiper-wrapper {
 } */
 
 .top_slide {
-    position: relative;
+    /* position: relative; */
     margin-bottom: 20px;
     border-bottom: 3px solid var(--main_color);
 
@@ -412,7 +411,7 @@ swiper-wrapper {
 }
 
 .top_slide h2 {
-    position: relative;
+    /* position: relative; */
     text-transform: uppercase;
     background: var(--main_color);
     color: var(--white_color);
@@ -424,23 +423,23 @@ swiper-wrapper {
     width: max-content;
 }
 
-.top_slide h2::before {
-    content: '';
+/* .top_slide h2::before {
+    content: ''; 
     position: absolute;
     width: 0;
     height: 0;
-    top: 0;
+    top: 0; 
     z-index: 9;
     border-bottom: 20px solid transparent;
     background: #fff;
     left: 0;
-    border-bottom: 20px solid #e26e02;
+    border-bottom: 20px solid #e26e02; 
 
-}
+} */
 
-.top_slide h2 i {
+/* .top_slide h2 i {
     color: var(--white_color);
-}
+} */
 
 .slide .container {
     position: relative;
@@ -612,7 +611,7 @@ swiper-wrapper {
 }
 
 .product .icons .btn_add_cart.active i {
-    color: var(--main_color);
+    /* color: var(--main_color); */
 }
 
 .product .icons .btn_add_cart:Hover {
