@@ -1,0 +1,141 @@
+.boad{
+    background: #ff8716;
+    height: 450px;
+    border-radius: 20px 20px 200px 200px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.boad .shipping {
+  margin:0px 0px 0px 400px;
+  width: 450px;      
+  height: 450px;     
+  position: relative;
+  overflow: hidden;
+}
+
+.boad .shipping img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.boad .shipping img.active {
+  opacity: 1;
+}
+
+.txt_shipping 
+{
+    color: black;
+    padding: 0px 50px 0px 50px;
+}
+.txt_shipping p
+{
+    padding: 0px 150px 0px 150px;
+}
+.txt_shipping h1
+{
+    font-size: 50px;
+}
+
+
+
+
+
+.boad_2{
+    background: #ff8716;
+    height: 450px;
+    border-radius: 20px 20px 200px 200px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.boad_2 .packaging {
+  margin:0px 0px 0px 400px;
+  width: 450px;      
+  height: 450px;     
+  position: relative;
+  overflow: hidden;
+}
+
+.boad_2 .packaging img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.boad_2 .packaging img.active {
+  opacity: 1;
+}
+
+.txt_packaging
+{
+    color: black;
+    padding: 0px 50px 0px 50px;
+}
+.txt_packaging p
+{
+    padding: 0px 150px 0px 150px;
+}
+.txt_packaging h1
+{
+    font-size: 50px;
+}
+
+
+
+
+.boad_3{
+    background: #ff8716;
+    height: 450px;
+    border-radius: 20px 20px 200px 200px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.boad_3 .Payment {
+  margin:0px 0px 0px 400px;
+  width: 450px;      
+  height: 450px;     
+  position: relative;
+  overflow: hidden;
+}
+
+.boad_3 .Payment img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.boad_3 .Payment img.active {
+  opacity: 1;
+}
+
+.txt_Payment
+{
+    color: black;
+    padding: 0px 50px 0px 50px;
+}
+.txt_Payment p
+{
+    padding: 0px 150px 0px 150px;
+}
+.txt_Payment h1
+{
+    font-size: 50px;
+}

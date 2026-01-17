@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Easy Shop</title>
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="top_header">
+                <div class="container">
+                    <a href="index.html" class="logo"><img src="img/WhatsApp Image 2025-12-12 at 2.13.47 PM.jpeg"
+                            alt></a>
+
+                     <form action class="search_box"> 
+                        <div class="select_box">
+                             <select id="category" name="category"> 
+
+                                <option value="All categories"> All categories
+                                </option>
+                                <option
+                                     value="Electronics & Digital">Electronics &
+                                    Digital</option>
+                                <option value="phones & tablet">phones &
+                                    tablet</option>
+                                <option value="fashion & clothings">fashion &
+                                    clothings</option>
+                                <option value="telivsion & monitor">telivsion &
+                                    monitor</option>
+                                <option value="jewelry & watches">jewelry &
+                                    watches</option>
+                                <option value="washing machine">washing
+                                    machine</option>
+                                <option value="toy & hobbies">toy &
+                                    hobbies</option>  
+
+                            </select>
+                        </div>
+
+                        <input type="text" name="search" id="search"
+                            placeholder="search for products" required>
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                    </form>
+
+                    <div class="header_icons">
+                        <div class="icon">
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="count count_favourite">0</span>
+                            </a>
+                        </div>
+
+                        
+                        <div class="icon">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+
+                            <span class="count count_item_heater">0</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bottom_header">
+
+                    <div class="container">
+                        <nav class="nav">
+                            <div class="category_nav">
+                                <div onclick="open_categ_list()"
+                                    class="category_btn">
+                                    <i class="fa-solid fa-list"></i>
+                                    <p>Browse category</p>
+                                    <i class="fa-solid fa-arrow-down"></i>
+
+                                </div>
+
+                                <div class="category_nav_list">
+                                    <a href>Top 10 Offers</a>
+                                    <a href>Electronics & Digita</a>
+                                    <a href>Fashion & Clothings</a>
+                                    <a href>Phones & Tablet</a>
+                                    <a href>Telivsion & Monitor</a>
+                                    <a href>jewelry & watches</a>
+                                    <a href>Toys & Hobbies</a>
+
+                                </div>
+
+                            </div>
+
+                            <ul class="nav_links">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Accesories</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+
+                        </nav>
+                        <div class="login_signup btns">
+                            <a href="views/login.htm" class="btn">login <i
+                                    class="fa-solid fa-right-to-bracket"></i>
+                            </a>
+
+                            <a href="views/sign_in.html" class="btn">sign up <i
+                                    class="fa-solid fa-user-plus"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="slider">
+                <div class="container">
+
+                    <!-- swiper -->
+                    <div class="slide-swp mySwiper">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#"> <img src="img/banner_home1.png"
+                                        alt> </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#"> <img src="img/banner_home2.png"
+                                        alt> </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+
+                    </div>
+
+                    <div class="banner_2">
+                        <a href="#"><img src="img/banner_home3.png" alt></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="banner_4">
+            <div class="container">
+
+                <div class="box">
+                    <a href="#" class="link_btn"></a>
+                    <img src="img/banner3_1.png" alt>
+                    <div class="text">
+                        <h5>Break Disc</h5>
+                        <h5>deals on this</h5>
+                        <div class="sale">
+                            <p>Up <br> to</p>
+                            <span>70%</span>
+
+                        </div>
+
+                        <h6>Shop Now</h6>
+
+                    </div>
+                </div>
+
+                <div class="box">
+                    <a href="#" class="link_btn"></a>
+                    <img src="img/banner3_2.png" alt>
+                    <div class="text">
+                        <h5>Break Disc</h5>
+                        <h5>deals on this</h5>
+                        <div class="sale">
+                            <p>Up <br> to</p>
+                            <span>70%</span>
+
+                        </div>
+
+                        <h6>Shop Now</h6>
+
+                    </div>
+                </div>
+
+                <div class="box">
+                    <a href="#" class="link_btn"></a>
+                    <img src="img/banner3_3.png" alt>
+                    <div class="text">
+                        <h5>Break Disc</h5>
+                        <h5>deals on this</h5>
+                        <div class="sale">
+                            <p>Up <br> to</p>
+                            <span>70%</span>
+
+                        </div>
+
+                        <h6>Shop Now</h6>
+
+                    </div>
+                </div>
+
+                <div class="box">
+                    <a href="#" class="link_btn"></a>
+                    <img src="img/banner3_4.png" alt>
+                    <div class="text">
+                        <h5>Break Disc</h5>
+                        <h5>deals on this</h5>
+                        <div class="sale">
+                            <p>Up <br> to</p>
+                            <span>70%</span>
+
+                        </div>
+
+                        <h6>Shop Now</h6>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="slider_products slide">
+            <div class="container">
+                <div class="slide_product">
+
+                    <div class="top_slide">
+                        <h2><i class="fa-solid fa-tags"></i>Hot Deals </h2>
+                    </div>
+
+                    <div class="products" id="swiper_items_sale">
+
+                        <div class="product">
+                            <span class="sale_present">50%</span>
+
+                            <div class="img_product">
+                                <a href="#"><img src="img/product/4.png"
+                                        alt></a>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="name_product"><a href="#">
+                                  OPPO A18 128GB 4GB Glowing Black
+
+                                    .</a></p>
+
+                            <div class="price">
+                                <p><span>$50</span></p>
+                                <p class="old_price">$80</p>
+                            </div>
+
+                            <div class="icons">
+                                <span class="btn_add_cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </span>
+                                <span class="icon_product">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product">
+                            <span class="sale_present">50%</span>
+
+                            <div class="img_product">
+                                <a href="#"><img src="img/product/3.png"
+                                        alt></a>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="name_product"><a href="#">
+                                    Canon EOS RP Mirrorless Camera
+                                    .</a></p>
+
+                            <div class="price">
+                                <p><span>$50</span></p>
+                                <p class="old_price">$80</p>
+                            </div>
+
+                            <div class="icons">
+                                <span class="btn_add_cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </span>
+                                <span class="icon_product">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product">
+                            <span class="sale_present">50%</span>
+
+                            <div class="img_product">
+                                <a href="#"><img src="img/product/0.png"
+                                        alt></a>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="name_product"><a href="#">
+                                    SAMSUNG 55 Inch UHD 4K Smart TV With Receiver
+                                    .</a></p>
+
+                            <div class="price">
+                                <p><span>$50</span></p>
+                                <p class="old_price">$80</p>
+                            </div>
+
+                            <div class="icons">
+                                <span class="btn_add_cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </span>
+                                <span class="icon_product">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product">
+                            <span class="sale_present">50%</span>
+
+                            <div class="img_product">
+                                <a href="#"><img src="img/product/5.png"
+                                        alt></a>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="name_product"><a href="#">
+                                   Samsung 27-Inch G55C Odyssey QHD 4k
+                                    .</a></p>
+
+                            <div class="price">
+                                <p><span>$50</span></p>
+                                <p class="old_price">$80</p>
+                            </div>
+
+                            <div class="icons">
+                                <span class="btn_add_cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </span>
+                                <span class="icon_product">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product">
+                            <span class="sale_present">50%</span>
+
+                            <div class="img_product">
+                                <a href="#"><img src="img/product/1.png"
+                                        alt></a>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="name_product"><a href="#">
+                                    Redmi 13C Dual SIM with 6GB RAM
+                                    .</a></p>
+
+                            <div class="price">
+                                <p><span>$50</span></p>
+                                <p class="old_price">$80</p>
+                            </div>
+
+                            <div class="icons">
+                                <span class="btn_add_cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </span>
+                                <span class="icon_product">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product">
+                            <span class="sale_present">50%</span>
+
+                            <div class="img_product">
+                                <a href="#"><img src="img/product/2.png"
+                                        alt></a>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="name_product"><a href="#">
+                                    Redmi 13C Dual SIM with 6GB RAM
+                                    .</a></p>
+
+                            <div class="price">
+                                <p><span>$50</span></p>
+                                <p class="old_price">$80</p>
+                            </div>
+
+                            <div class="icons">
+                                <span class="btn_add_cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </span>
+                                <span class="icon_product">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        
+                        <div class="product">
+                            <span class="sale_present">50%</span>
+
+                            <div class="img_product">
+                                <a href="#"><img src="img/product/4.png"
+                                        alt></a>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="name_product"><a href="#">
+                                  OPPO A18 128GB 4GB Glowing Black
+
+                                    .</a></p>
+
+                            <div class="price">
+                                <p><span>$50</span></p>
+                                <p class="old_price">$80</p>
+                            </div>
+
+                            <div class="icons">
+                                <span class="btn_add_cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </span>
+                                <span class="icon_product">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product">
+                            <span class="sale_present">50%</span>
+
+                            <div class="img_product">
+                                <a href="#"><img src="img/product/3.png"
+                                        alt></a>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="name_product"><a href="#">
+                                    Canon EOS RP Mirrorless Camera
+                                    .</a></p>
+
+                            <div class="price">
+                                <p><span>$50</span></p>
+                                <p class="old_price">$80</p>
+                            </div>
+
+                            <div class="icons">
+                                <span class="btn_add_cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </span>
+                                <span class="icon_product">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product">
+                            <span class="sale_present">50%</span>
+
+                            <div class="img_product">
+                                <a href="#"><img src="img/product/0.png"
+                                        alt></a>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="name_product"><a href="#">
+                                    SAMSUNG 55 Inch UHD 4K Smart TV With Receiver
+                                    .</a></p>
+
+                            <div class="price">
+                                <p><span>$50</span></p>
+                                <p class="old_price">$80</p>
+                            </div>
+
+                            <div class="icons">
+                                <span class="btn_add_cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </span>
+                                <span class="icon_product">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product">
+                            <span class="sale_present">50%</span>
+
+                            <div class="img_product">
+                                <a href="#"><img src="img/product/5.png"
+                                        alt></a>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="name_product"><a href="#">
+                                   Samsung 27-Inch G55C Odyssey QHD 4k
+                                    .</a></p>
+
+                            <div class="price">
+                                <p><span>$50</span></p>
+                                <p class="old_price">$80</p>
+                            </div>
+
+                            <div class="icons">
+                                <span class="btn_add_cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </span>
+                                <span class="icon_product">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product">
+                            <span class="sale_present">50%</span>
+
+                            <div class="img_product">
+                                <a href="#"><img src="img/product/1.png"
+                                        alt></a>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="name_product"><a href="#">
+                                    Redmi 13C Dual SIM with 6GB RAM
+                                    .</a></p>
+
+                            <div class="price">
+                                <p><span>$50</span></p>
+                                <p class="old_price">$80</p>
+                            </div>
+
+                            <div class="icons">
+                                <span class="btn_add_cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </span>
+                                <span class="icon_product">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product">
+                            <span class="sale_present">50%</span>
+
+                            <div class="img_product">
+                                <a href="#"><img src="img/product/2.png"
+                                        alt></a>
+                            </div>
+
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p class="name_product"><a href="#">
+                                    Redmi 13C Dual SIM with 6GB RAM
+                                    .</a></p>
+
+                            <div class="price">
+                                <p><span>$50</span></p>
+                                <p class="old_price">$80</p>
+                            </div>
+
+                            <div class="icons">
+                                <span class="btn_add_cart">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    Add to Cart
+                                </span>
+                                <span class="icon_product">
+                                    <i class="fa-regular fa-heart"></i>
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img  class="logo_footer" src="img/WhatsApp Image 2025-12-12 at 2.13.47 PM.jpeg" alt="logo">
+                
+                <p>met Qui consequatur impedit temporibus molestias sint culpa.</p>
+            
+                <div class="icons_footer">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            
+            </div>
+
+            <div class="row">
+                <h4>Find It Fast</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Laptops & Computers </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Smart Phones & Tablets</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> TV & Audio</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Appliances</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Jewelry & Watches</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Quick Links</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Your Account </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Returns & Exchanges</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Shipping & Delivery</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Estimated Delivery Time</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Purchase Hisotry</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Service us</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Support Center</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Term & Conditions</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Help</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> FAQS</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>&copy; <span>Easy shop.</span> All Rights Reserved.</p>
+
+                <div class="payment_img">
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </body>
+
+</html>
