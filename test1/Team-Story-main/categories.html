@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Easy Shop</title>
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+            
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sekuya&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+            <div class="top_header">
+                <div class="container">
+                    <a href="index.html" class="logo"><img src="img/WhatsApp Image 2025-12-12 at 2.13.47 PM.jpeg"
+                            alt></a>
+
+                     <form action class="search_box"> 
+                        <div class="select_box">
+                             <select id="category" name="category"> 
+
+                                <option value="All categories"> All categories
+                                </option>
+                                <option
+                                     value="Electronics & Digital">Electronics &
+                                    Digital</option>
+                                <option value="phones & tablet">phones &
+                                    tablet</option>
+                                <option value="fashion & clothings">fashion &
+                                    clothings</option>
+                                <option value="telivsion & monitor">telivsion &
+                                    monitor</option>
+                                <option value="jewelry & watches">jewelry &
+                                    watches</option>
+                                <option value="washing machine">washing
+                                    machine</option>
+                                <option value="toy & hobbies">toy &
+                                    hobbies</option>  
+
+                            </select>
+                        </div>
+
+                        <input type="text" name="search" id="search"
+                            placeholder="search for products" required>
+                        <button type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                    </form>
+
+                    <div class="header_icons">
+                        <div class="icon">
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                                <span class="count count_favourite">0</span>
+                            </a>
+                        </div>
+
+                        
+                        <div class="icon">
+                            <i class="fa-solid fa-cart-arrow-down"></i>
+
+                            <span class="count count_item_heater">0</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bottom_header">
+
+                    <div class="container">
+                        <nav class="nav">
+
+                            <div class="category_nav">
+                                <div onclick="open_categ_list()"
+
+                                    class="category_btn">
+                                    <i class="fa-solid fa-list"></i>
+                                    <p>Browse category</p>
+                                    <i class="fa-solid fa-arrow-down"></i>
+                                </div>
+
+
+                                <div class="category_nav_list">
+                                    <a href>Top 10 Offers</a>
+                                    <a href>Electronics & Digita</a>
+                                    <a href>Fashion & Clothings</a>
+                                    <a href>Phones & Tablet</a>
+                                    <a href>Telivsion & Monitor</a>
+                                    <a href>jewelry & watches</a>
+                                    <a href>Toys & Hobbies</a>
+
+                                </div>
+
+                            </div>
+
+                            <ul class="nav_links">
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="categories.html">categories</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+
+                        </nav>
+                        <div class="login_signup btns">
+                            <a href="views/login.htm" class="btn">login <i
+                                    class="fa-solid fa-right-to-bracket"></i>
+                            </a>
+
+                            <a href="views/sign_in.html" class="btn">sign up <i
+                                    class="fa-solid fa-user-plus"></i></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </header>
+
+    <br> 
+
+    <div class="boad">
+        <div class="my-sliderr">
+            <img class="slide active" src="img/Electronics & Digital/1.png">
+            <img class="slide" src="img/Electronics & Digital/2.png">
+            <img class="slide" src="img/Electronics & Digital/3.png">
+            <img class="slide" src="img/Electronics & Digital/4.png">
+            <img class="slide" src="img/Electronics & Digital/5.png">
+        </div>
+
+        <div class="boad_txt">
+            <h1>Electronics & Digital</h1>
+            
+        </div>
+
+    </div>
+    <br>
+    <br>
+
+    <div class="boad_2">
+        <div class="boad_2_txt">
+            <h1>toy & hobbies</h1>
+        </div>
+        <div class="my-sliderr_2">
+            <img class="slide active" src="img/toy & hobbies/1.png">
+            <img class="slide" src="img/toy & hobbies/2.png">
+            <img class="slide" src="img/toy & hobbies/3.png">
+            <img class="slide" src="img/toy & hobbies/4.png">
+            <img class="slide" src="img/toy & hobbies/5.png">
+        </div>
+    </div>
+    <br>
+    <br>
+        <div class="boad_3">
+         <div class="my-sliderr_3">
+            <img class="slide active" src="img/washing machine/1.png">
+            <img class="slide" src="img/washing machine/2.png">
+            <img class="slide" src="img/washing machine/3.png">
+         </div>
+
+         <div class="boad_3_txt">
+            <h1>washing machine</h1>
+         </div>
+        </div>
+
+    <br>
+    <br>
+
+    <div class="boad_4">
+        <div class="boad_4_txt">
+            <h1>jewelry & watches</h1>
+        </div>
+        <div class="my-sliderr_4">
+            <img class="slide active" src="img/jewelry & watches/1.png">
+            <img class="slide" src="img/jewelry & watches/2.png">
+            <img class="slide" src="img/jewelry & watches/3.png">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="boad_5">
+         <div class="my-sliderr_5">
+            <img class="slide active" src="img/telivsion & monitor/1.png">
+            <img class="slide" src="img/telivsion & monitor/2.png">
+            <img class="slide" src="img/telivsion & monitor/3.png">
+            <img class="slide" src="img/telivsion & monitor/4.png">
+         </div>
+
+         <div class="boad_5_txt">
+            <h1>telivsion & monitor</h1>
+         </div>
+    </div>
+    <br>
+    <br>
+    <div class="boad_6">
+        <div class="boad_6_txt">
+            <h1>fashion & clothings</h1>
+        </div>
+        <div class="my-sliderr_6">
+            <img class="slide active" src="img/fashion & clothings/1.png">
+            <img class="slide" src="img/fashion & clothings/2.png">
+            <img class="slide" src="img/fashion & clothings/3.png">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="boad_7">
+         <div class="my-sliderr_7">
+            <img class="slide active" src="img/phones & tablet/1.png">
+            <img class="slide" src="img/phones & tablet/2.png">
+            <img class="slide" src="img/phones & tablet/3.png">
+            <img class="slide" src="img/phones & tablet/4.png">
+            <img class="slide" src="img/phones & tablet/5.png">
+            <img class="slide" src="img/phones & tablet/6.png">
+            <img class="slide" src="img/phones & tablet/7.png">
+            <img class="slide" src="img/phones & tablet/8.png">
+         </div>
+
+         <div class="boad_7_txt">
+            <h1>phones & tablet</h1>
+         </div>
+    </div>
+
+    <br>
+
+
+
+        
+    <footer>
+        <div class="container">
+            <div class="big_row">
+                <img  class="logo_footer" src="img/WhatsApp Image 2025-12-12 at 2.13.47 PM.jpeg" alt="logo">
+                
+                <p>met Qui consequatur impedit temporibus molestias sint culpa.</p>
+            
+                <div class="icons_footer">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            
+            </div>
+
+            <div class="row">
+                <h4>Find It Fast</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Laptops & Computers </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Smart Phones & Tablets</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> TV & Audio</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Appliances</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Jewelry & Watches</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Quick Links</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Your Account </a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Returns & Exchanges</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Shipping & Delivery</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Estimated Delivery Time</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Purchase Hisotry</a>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h4>Service us</h4>
+
+                <div class="links">
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Support Center</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Term & Conditions</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Privacy Policy</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> Help</a>
+                    <a href="#"><i class="fa-solid fa-caret-right"></i> FAQS</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_footer">
+            <div class="container">
+                <p>&copy; <span>Easy shop.</span> All Rights Reserved.</p>
+
+                <div class="payment_img">
+                    <img src="img/payment_method.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/categproes.js"></script>
+
+    </body>
+
+</html>
