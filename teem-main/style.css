@@ -1,0 +1,327 @@
+
+.my-slider {
+  width: 150px;      /* عدّل العرض */
+  height: 150px;     /* عدّل الارتفاع */
+  position: relative;
+  overflow: hidden;
+}
+
+.my-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.my-slider img.active {
+  opacity: 1;
+}
+body{
+    background: hsl(30, 17%, 91%);
+    
+}
+.boad{
+    background: #ff8716;
+    height: 450px;
+    border-radius: 20px 20px 200px 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.boad .my-sliderr {
+  margin:0px 0px 0px 30px;
+  width: 450px;      /* عدّل العرض */
+  height: 450px;     /* عدّل الارتفاع */
+  position: relative;
+  overflow: hidden;
+}
+
+.boad .my-sliderr img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.boad .my-sliderr img.active {
+  opacity: 1;
+}
+.boad_2{
+    background: #ff8716;
+    height: 450px;
+    border-radius: 20px 20px 20px 200px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.boad_2 .my-sliderr_2 {
+  margin:0px 0px 0px 30px;
+  width: 450px;      /* عدّل العرض */
+  height: 450px;     /* عدّل الارتفاع */
+  position: relative;
+  overflow: hidden;
+}
+
+.boad_2 .my-sliderr_2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.boad_2 .my-sliderr_2 img.active {
+  opacity: 1;
+}
+.boad .boad_txt h1{
+    color: white;
+    margin-right: 350px;
+    font-size: xx-large;
+    font-family: "DM Sans", sans-serif;
+    font-style: italic;
+    font-weight: 120px;
+    
+}
+.boad .boad_txt h4{
+    font-family: "DM Sans", sans-serif;
+}
+.boad_2 .boad_2_txt h1{
+    color: white;
+    margin-left: 350px;
+    font-size: xx-large;
+    font-family: "DM Sans", sans-serif;
+    font-style: italic;
+    font-weight: 120px;
+}
+.boad_3{
+    background: #ff8716;
+    height: 450px;
+    border-radius: 20px 20px 200px 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.boad_3 .my-sliderr_3 {
+  margin:0px 0px 0px 30px;
+  width: 450px;      /* عدّل العرض */
+  height: 450px;     /* عدّل الارتفاع */
+  position: relative;
+  overflow: hidden;
+}
+
+.boad_3 .my-sliderr_3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.boad_3 .my-sliderr_3 img.active {
+  opacity: 1;
+}
+.boad_3 .boad_3_txt h1{
+    color: white;
+    margin-right: 350px;
+    font-size: xx-large;
+    font-family: "DM Sans", sans-serif;
+    font-style: italic;
+    font-weight: 120px;
+    
+}
+.boad_3 .boad_3_txt h4{
+    font-family: "DM Sans", sans-serif;
+}
+.boad_4{
+    background: #ff8716;
+    height: 450px;
+    border-radius: 20px 20px 20px 200px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.boad_4 .my-sliderr_4 {
+  margin:0px 0px 0px 30px;
+  width: 450px;      /* عدّل العرض */
+  height: 450px;     /* عدّل الارتفاع */
+  position: relative;
+  overflow: hidden;
+}
+
+.boad_4 .my-sliderr_4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.boad_4 .my-sliderr_4 img.active {
+  opacity: 1;
+}
+.boad_4 .boad_4_txt h1{
+    color: white;
+    margin-left: 350px;
+    font-size: xx-large;
+    font-family: "DM Sans", sans-serif;
+    font-style: italic;
+    font-weight: 120px;
+    
+}
+.boad_4 .boad_4_txt h4{
+    font-family: "DM Sans", sans-serif;
+}
+
+.boad_5{
+    background: #ff8716;
+    height: 450px;
+    border-radius: 20px 20px 200px 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.boad_5 .my-sliderr_5 {
+  margin:0px 0px 0px 30px;
+  width: 450px;      /* عدّل العرض */
+  height: 450px;     /* عدّل الارتفاع */
+  position: relative;
+  overflow: hidden;
+}
+
+.boad_5 .my-sliderr_5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.boad_5 .my-sliderr_5 img.active {
+  opacity: 1;
+}
+.boad_5 .boad_5_txt h1{
+    color: white;
+    margin-right: 350px;
+    font-size: xx-large;
+    font-family: "DM Sans", sans-serif;
+    font-style: italic;
+    font-weight: 120px;
+    
+}
+.boad_5 .boad_5_txt h4{
+    font-family: "DM Sans", sans-serif;
+}
+
+
+.boad_6{
+    background: #ff8716;
+    height: 450px;
+    border-radius: 20px 20px 20px 200px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.boad_6 .my-sliderr_6 {
+  margin:0px 0px 0px 30px;
+  width: 450px;      /* عدّل العرض */
+  height: 450px;     /* عدّل الارتفاع */
+  position: relative;
+  overflow: hidden;
+}
+
+.boad_6 .my-sliderr_6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.boad_6 .my-sliderr_6 img.active {
+  opacity: 1;
+}
+.boad_6 .boad_6_txt h1{
+    color: white;
+    margin-left: 350px;
+    font-size: xx-large;
+    font-family: "DM Sans", sans-serif;
+    font-style: italic;
+    font-weight: 120px;
+    
+}
+.boad_6 .boad_6_txt h4{
+    font-family: "DM Sans", sans-serif;
+}
+
+.boad_7{
+    background: #ff8716;
+    height: 450px;
+    border-radius: 20px 20px 200px 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.boad_7 .my-sliderr_7 {
+  margin:0px 0px 0px 30px;
+  width: 450px;      /* عدّل العرض */
+  height: 450px;     /* عدّل الارتفاع */
+  position: relative;
+  overflow: hidden;
+}
+
+.boad_7 .my-sliderr_7 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.boad_7 .my-sliderr_7 img.active {
+  opacity: 1;
+}
+.boad_7 .boad_7_txt h1{
+    color: white;
+    margin-right: 350px;
+    font-size: xx-large;
+    font-family: "DM Sans", sans-serif;
+    font-style: italic;
+    font-weight: 120px;
+    
+}
+.boad_7 .boad_7_txt h4{
+    font-family: "DM Sans", sans-serif;
+}
+.headerh1 h2{
+  color: rgb(206, 210, 212);
+}
+
+.header .slide {
+  margin-left: 20px;
+}

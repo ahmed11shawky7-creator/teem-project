@@ -34,6 +34,7 @@ h1, h3, h2, h4, h5, h6 {
 
 img {
     width: 100%;
+    border-radius: 15px;
 }
 
 input, select, button {
@@ -480,19 +481,16 @@ swiper-wrapper {
 
 }
 
-.products {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
+
 
 .product {
     background: #fff;
     padding: 20px 20px;
-    margin: 0;
+    margin: 20px;
     box-shadow: 5px 5px 10px #94949428;
     border: 1px solid var(--border_color);
     border-radius: 5px;
+    width: 20%;
     box-sizing: border-box;
     position: relative;
 }
@@ -509,7 +507,7 @@ swiper-wrapper {
 }
 
 .product .img_product {
-    width: 160px;
+    width: 200px;
     height: 180px;
     position: relative;
     display: flex;
